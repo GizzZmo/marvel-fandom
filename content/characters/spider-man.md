@@ -4,8 +4,13 @@ alias: "Spider-Man"
 universe: "Earth-616"
 firstAppearance: "Amazing Fantasy #15 (1962)"
 alignment: "Hero"
-teams: ["Avengers", "Fantastic Four", "Web-Warriors"]
+teams: ["Avengers", "Fantastic Four", "Web-Warriors", "New Avengers"]
 avatar: "/images/spiderman.svg"
+creators: ["Stan Lee", "Steve Ditko"]
+aliases: ["Spidey", "The Amazing Spider-Man", "Bombastic Bag-Man"]
+species: "Mutate"
+status: "Aktiv"
+base: "New York City"
 powerStats:
   strength: 75
   speed: 80
@@ -15,18 +20,34 @@ powerStats:
 
 # Bakgrunn
 
-Peter Parker ble bitt av en radioaktiv edderkopp under en vitenskapsmesse på videregående skole, noe som ga ham superkrefter som tilsvarer egenskapene til en edderkopp.
+Peter Parker vokste opp hos onkel Ben og tante May i Queens. Som tenåring ble han bitt av en radioaktiv edderkopp under en vitenskapsutstilling. Bitten ga proporsjonal styrke, evne til å klistre seg til flater, og en spider-sense som advarer om fare et øyeblikk før den inntreffer.
 
-## Kjente sitater
+Den første tiden brukte han evnene som maskert bryter. Da en innbruddstyv han lot slippe unna senere drepte onkel Ben, formulerte han prinsippet som har styrt ham siden: makt uten ansvar er bare ego.
 
-> *"With great power comes great responsibility."*
+## Personlighet og metode
+
+Parker er forsker like mye som slåsskjempe. Humoren er et forsvar. Skyldfølelse over May, Gwen Stacy og sivile tap gjør at han sjelden hviler. Han har et nabolag, ikke et hovedkvarter.
 
 ## Krefter og evner
 
-* **Spider-Sense:** En sjette sans som varsler om overhengende fare.
-* **Overmenneskelig styrke og smidighet:** Kan klatre på overflater og løfte flere tonn.
-* **Web-Shooters:** Mekaniske håndleddsenheter konstruert av Peter selv som skyter syntetisk edderkoppspinn.
+* Proporsjonal edderkoppsstyrke
+* Veggkrangling og spider-sense
+* Web-shooters med syntetisk silkefluid
+* Intellekt i kjemi og improvisert ingeniørkunst
 
-## Merknad
+## Nøkelbuer
 
-Innholdet her er et kort fandom-sammendrag for arkitekturdemoen. Bytt ut teksten med dine egne artikler når du utvider wikien.
+* Tidlig Ditko/Lee
+* The Night Gwen Stacy Died
+* Kravens siste jakt
+* Civil War og unmaskingen
+* Superior Spider-Man
+* Spider-Verse / Web-Warriors
+
+## Relasjoner
+
+May er moralsk kompass. Mary Jane er relasjonen de fleste moderne runs vender tilbake til. Norman Osborn ødelegger liv, ikke bare kjever.
+
+## Kontinuitetsnotat
+
+One More Day og senere runs endrer ekteskap og hukommelse. Oppgi hvilken æra du beskriver.

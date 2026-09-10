@@ -4,8 +4,13 @@ alias: "Iron Man"
 universe: "Earth-616"
 firstAppearance: "Tales of Suspense #39 (1963)"
 alignment: "Hero"
-teams: ["Avengers", "Illuminati"]
+teams: ["Avengers", "Illuminati", "S.H.I.E.L.D."]
 avatar: "/images/ironman.svg"
+creators: ["Stan Lee", "Larry Lieber", "Don Heck", "Jack Kirby"]
+aliases: ["The Armored Avenger", "Shellhead"]
+species: "Menneske"
+status: "Aktiv"
+base: "Stark Tower / Avengers Mansion"
 powerStats:
   strength: 85
   speed: 70
@@ -16,18 +21,30 @@ powerStats:
 
 # Bakgrunn
 
-Tony Stark er geniet, milliardæren og våpenutvikleren som bygde den første Iron Man-rustningen i fangenskap. Drakten — og de påfølgende modellene — gjør ham til et av universets mest allsidige våpen og skjold.
+Anthony Edward Stark arvet et våpenimperium og et geni som nesten alltid løper foran samvittigheten. I den klassiske originen blir han såret og tatt til fange. Sammen med Ho Yinsen bygger han den første rustningen — livstøtte og rømningsplan. Når han kommer hjem, slutter han ikke å bygge.
 
-## Kjente sitater
+## Personlighet og metode
 
-> *"I am Iron Man."*
+Sjarmerende, konkurranseorientert og sjelden ærlig om hvor redd han er. Illuminati-årene viser skyggesiden. Avhengighet — alkohol i Demon in a Bottle, senere teknologi og kontroll — er like sentralt som repulsorene.
 
-## Krefter og evner
+## Rustning og evner
 
-* **Rustningssystemer:** Repulsorer, unibeam, flyegenskaper og et arsenal som oppdateres mellom hver krise.
-* **J.A.R.V.I.S. / F.R.I.D.A.Y.:** Kunstig intelligens som styrer taktikk, diagnostikk og targeting.
-* **Teknologisk improvisasjon:** Stark designer løsninger midt i kampen, ofte raskere enn motstanderen rekker å tilpasse seg.
+* Modulære drakter fra prototyp til nanotech
+* Repulsorer, unibeam og AI-lag som J.A.R.V.I.S. og F.R.I.D.A.Y.
+* Sårbarhet uten drakt
 
-## Relaterte events
+## Nøkelbuer
 
-Se Civil War og Infinity-sagaen for de mest definerende vendepunktene i Starks historie.
+* Demon in a Bottle
+* Armor Wars
+* Civil War
+* World's Most Wanted / Stark Disassembled
+* Superior Iron Man
+
+## Relasjoner
+
+Pepper Potts, James Rhodes, Steve Rogers og Doctor Doom definerer de fire aksene: liv, samvittighet, brudd og rival.
+
+## Kontinuitetsnotat
+
+Iron Man er et system, ikke én drakt. Oppgi rustningsgenerasjon.

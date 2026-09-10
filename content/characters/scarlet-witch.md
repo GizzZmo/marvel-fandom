@@ -4,8 +4,13 @@ alias: "Scarlet Witch"
 universe: "Earth-616"
 firstAppearance: "X-Men #4 (1964)"
 alignment: "Anti-Hero"
-teams: ["Avengers", "Brotherhood of Mutants"]
+teams: ["Avengers", "Brotherhood of Mutants", "Force Works"]
 avatar: "/images/scarlet-witch.svg"
+creators: ["Stan Lee", "Jack Kirby"]
+aliases: ["Wanda", "The Scarlet Witch"]
+species: "Menneske (kaosmagi / omstridt mutantstatus)"
+status: "Aktiv"
+base: "Vandrer / tidligere Wundagore"
 powerStats:
   strength: 35
   speed: 45
@@ -16,18 +21,27 @@ powerStats:
 
 # Bakgrunn
 
-Wanda Maximoff er en av de mest uforutsigbare kraftpakkene i Marvel-universet. Hex-magi og kaosmagi lar henne bøye sannsynlighet, virkelighet og — i ytterste konsekvens — selve kontinuiteten.
+Wanda Maximoff debuterte i Magnetos Brotherhood sammen med Pietro. Tidlige år rammet henne inn som hex-heks. Etter hvert ble det klart at hun rører ved premissene for en scene: materie, minne, identitet, kontinuitet.
 
-## Kjente sitater
+Opphavet er et av Marvels mest omskrevne. Det som består er rollen som nexus.
 
-> *"No more mutants."*
+## Personlighet og metode
+
+Hun søker tilhørighet hardt. Når hun mister den, lekker magien. I House of M er tragedien politisk og personlig på samme tid.
 
 ## Krefter og evner
 
-* **Kaosmagi:** Omskriver regler for materie, tid og identitet.
-* **Sannsynlighetsheks:** Små «uheld» som kumulativt endrer et helt slag.
-* **Nexus-potensial:** I visse kontinuiteter er Wanda knyttet til selve veven av virkelighet.
+* Hex-kraft og kaosmagi
+* Nexus-potensial i enkelte kosmologier
+* Begrensning: mentale kostnader og upresise bivirkninger
 
-## Merknad
+## Nøkelbuer
 
-Wanda beveger seg mellom helt, antihelt og antagonist avhengig av runen, eventet og universet. Bruk `alignment` og `universe` i frontmatter for å holde oversikt.
+* Avengers-opptak
+* Vision og barna
+* Avengers Disassembled og House of M
+* Children's Crusade
+
+## Kontinuitetsnotat
+
+Oppgi pre- eller post-House of M, og om du følger Krakoa-tidens mutantpolitikk.
