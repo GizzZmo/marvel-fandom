@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-zinc-950 text-zinc-100 antialiased;
+}
+
+.comic-panel {
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 0.06),
+    0 18px 50px -24px rgb(230 36 41 / 0.45);
+}
+
+.stat-bar {
+  @apply h-1.5 overflow-hidden rounded-full bg-zinc-800;
+}
+
+.stat-bar > span {
+  @apply block h-full rounded-full bg-gradient-to-r from-marvel-crimson to-marvel-red;
+}
