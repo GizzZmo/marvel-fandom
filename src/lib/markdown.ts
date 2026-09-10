@@ -27,6 +27,8 @@ export function getAllCharacters(): CharacterMeta[] {
       return {
         slug,
         teams: [],
+        creators: [],
+        aliases: [],
         ...(data as Omit<CharacterMeta, "slug">),
       };
     })
@@ -44,6 +46,8 @@ export function getCharacterBySlug(slug: string): Character {
     meta: {
       slug,
       teams: [],
+      creators: [],
+      aliases: [],
       ...(data as Omit<CharacterMeta, "slug">),
     },
     content,
@@ -67,6 +71,7 @@ export function getAllEvents(): EventMeta[] {
       return {
         slug,
         characters: [],
+        creators: [],
         ...(data as Omit<EventMeta, "slug">),
       };
     })
@@ -84,6 +89,7 @@ export function getEventBySlug(slug: string): Event {
     meta: {
       slug,
       characters: [],
+      creators: [],
       ...(data as Omit<EventMeta, "slug">),
     },
     content,

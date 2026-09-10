@@ -18,6 +18,11 @@ export interface CharacterMeta {
   teams: string[];
   avatar: string;
   powerStats?: PowerStats;
+  creators?: string[];
+  aliases?: string[];
+  species?: string;
+  status?: string;
+  base?: string;
 }
 
 export interface Character {
@@ -34,6 +39,8 @@ export interface EventMeta {
   characters: string[];
   cover: string;
   summary: string;
+  creators?: string[];
+  issues?: string;
 }
 
 export interface Event {

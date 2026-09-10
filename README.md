@@ -4,6 +4,8 @@ Statisk Marvel-wiki bygget med **Next.js App Router**, **Markdown + YAML-frontma
 
 Nye karakterer og hendelser legges til ved å opprette en `.md`-fil. Ingen database kreves.
 
+Arkivet har nå 17 karakterartikler og 10 eventartikler (Earth-616), med utdypende bakgrunn, nøkelbuer, relasjoner og kontinuitetsnotater. Karaktersider viser automatisk relaterte events, og events lenker tilbake til profiler som finnes i `content/characters`.
+
 ## Stack
 
 - Next.js 15 (App Router, SSG via `generateStaticParams`)
@@ -48,6 +50,11 @@ firstAppearance: "Amazing Fantasy #15 (1962)"
 alignment: "Hero"          # Hero | Villain | Anti-Hero
 teams: ["Avengers"]
 avatar: "/images/spiderman.svg"
+creators: ["Stan Lee", "Steve Ditko"]
+aliases: ["Spidey"]
+species: "Mutate"
+status: "Aktiv"
+base: "New York City"
 powerStats:
   strength: 75
   speed: 80
@@ -68,6 +75,8 @@ type: "Crossover"
 characters: ["Spider-Man", "Doctor Doom"]
 cover: "/images/secret-wars.svg"
 summary: "Kort ingress som vises i kort og tidslinje."
+creators: ["Jonathan Hickman"]
+issues: "Secret Wars #1–9"
 ---
 ```
 
@@ -82,12 +91,6 @@ summary: "Kort ingress som vises i kort og tidslinje."
 | `src/components/CharacterExplorer.tsx` | Filter på univers og allianse |
 
 Bilder ligger i `public/images`. Demoen bruker originale, stiliserte SVG-er — bytt dem gjerne ut med egne filer.
-
-## Videre utvidelser
-
-- Bytt `.md` mot `.mdx` og embed komponenter som `<PowerGraph />`
-- Generer «opptrådte i»-lenker fra `characters`-feltet på events
-- Deploy til Vercel: importer repoet og la Next.js-presettet kjøre
 
 ## Lisens
 
