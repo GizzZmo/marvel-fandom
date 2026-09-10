@@ -2,7 +2,7 @@
   "name": "marvel-fandom",
   "version": "1.0.0",
   "private": true,
-  "description": "Marvel fandom-wiki med Next.js, Markdown/Frontmatter og Tailwind CSS",
+  "description": "Marvel fandom-wiki med Next.js, MDX/Frontmatter og Tailwind CSS",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,9 +13,9 @@
     "fuse.js": "^7.0.0",
     "gray-matter": "^4.0.3",
     "next": "^15.5.2",
+    "next-mdx-remote": "^5.0.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-markdown": "^10.1.0",
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
