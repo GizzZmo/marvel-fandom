@@ -11,9 +11,19 @@ function readMarkdownFiles(directory: string): string[] {
     return [];
   }
 
-  return fs
+  const names = fs
     .readdirSync(directory)
     .filter((fileName) => fileName.endsWith(".md") || fileName.endsWith(".mdx"));
+
+  const preferred = new Map<string, string>();
+  for (const fileName of names) {
+    const slug = fileName.replace(/\.mdx?$/, "");
+    if (fileName.endsWith(".mdx") || !preferred.has(slug)) {
+      preferred.set(slug, fileName);
+    }
+  }
+
+  return Array.from(preferred.values());
 }
 
 export function getAllCharacters(): CharacterMeta[] {
@@ -38,7 +48,7 @@ export function getAllCharacters(): CharacterMeta[] {
 export function getCharacterBySlug(slug: string): Character {
   const mdPath = path.join(charactersDir, `${slug}.md`);
   const mdxPath = path.join(charactersDir, `${slug}.mdx`);
-  const fullPath = fs.existsSync(mdPath) ? mdPath : mdxPath;
+  const fullPath = fs.existsSync(mdxPath) ? mdxPath : mdPath;
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
@@ -81,7 +91,7 @@ export function getAllEvents(): EventMeta[] {
 export function getEventBySlug(slug: string): Event {
   const mdPath = path.join(eventsDir, `${slug}.md`);
   const mdxPath = path.join(eventsDir, `${slug}.mdx`);
-  const fullPath = fs.existsSync(mdPath) ? mdPath : mdxPath;
+  const fullPath = fs.existsSync(mdxPath) ? mdxPath : mdPath;
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
