@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MarkdownContent } from "@/components/MarkdownContent";
-import { getAllCharacters, getAllEventSlugs, getEventBySlug } from "@/lib/markdown";
+import { MdxContent } from "@/components/MdxContent";
+import { getAllEventSlugs, getEventBySlug } from "@/lib/markdown";
+import { resolveEventCharacters } from "@/lib/relations";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -14,13 +15,9 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-
   try {
     const { meta } = getEventBySlug(slug);
-    return {
-      title: meta.title,
-      description: meta.summary,
-    };
+    return { title: meta.title, description: meta.summary };
   } catch {
     return { title: "Hendelse ikke funnet" };
   }
@@ -28,24 +25,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function EventPage({ params }: PageProps) {
   const { slug } = await params;
-
   let event;
   try {
     event = getEventBySlug(slug);
   } catch {
     notFound();
   }
-
   const { meta, content } = event;
-  const roster = getAllCharacters();
-  const linkedCharacters = meta.characters.map((name) => {
-    const match = roster.find(
-      (character) =>
-        character.alias.toLowerCase() === name.toLowerCase() ||
-        character.name.toLowerCase() === name.toLowerCase(),
-    );
-    return { name, slug: match?.slug };
-  });
+  const linkedCharacters = resolveEventCharacters(meta);
 
   return (
     <article className="space-y-8">
@@ -57,49 +44,25 @@ export default async function EventPage({ params }: PageProps) {
           </p>
           <h1 className="mt-2 font-display text-5xl">{meta.title}</h1>
           <p className="mt-3 max-w-3xl text-zinc-400">{meta.summary}</p>
-          <div className="mt-4 space-y-1 text-sm text-zinc-400">
-            {meta.creators && meta.creators.length > 0 && (
-              <p>
-                <span className="text-marvel-gold">Skapere:</span> {meta.creators.join(", ")}
-              </p>
-            )}
-            {meta.issues && (
-              <p>
-                <span className="text-marvel-gold">Omfang:</span> {meta.issues}
-              </p>
-            )}
-          </div>
           {linkedCharacters.length > 0 && (
             <div className="mt-4 flex flex-wrap gap-2">
               {linkedCharacters.map((character) =>
                 character.slug ? (
-                  <Link
-                    key={character.name}
-                    href={`/characters/${character.slug}`}
-                    className="rounded-full border border-zinc-700 px-3 py-1 text-xs text-zinc-300 hover:border-marvel-red hover:text-white"
-                  >
-                    {character.name}
+                  <Link key={character.name} href={`/characters/${character.slug}`} className="rounded-full border border-zinc-700 px-3 py-1 text-xs text-zinc-300 hover:border-marvel-red hover:text-white">
+                    {character.alias ?? character.name}
                   </Link>
                 ) : (
-                  <span
-                    key={character.name}
-                    className="rounded-full border border-zinc-700 px-3 py-1 text-xs text-zinc-300"
-                  >
-                    {character.name}
-                  </span>
+                  <span key={character.name} className="rounded-full border border-zinc-700 px-3 py-1 text-xs text-zinc-300">{character.name}</span>
                 ),
               )}
             </div>
           )}
-          <Link
-            href="/events"
-            className="mt-6 inline-block text-sm text-zinc-400 hover:text-white"
-          >
+          <Link href="/events" className="mt-6 inline-block text-sm text-zinc-400 hover:text-white">
             ← Tilbake til hendelser
           </Link>
         </div>
       </header>
-      <MarkdownContent content={content} />
+      <MdxContent source={content} />
     </article>
   );
 }
