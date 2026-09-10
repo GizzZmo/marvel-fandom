@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Loki stylized portrait">
+  <rect width="400" height="400" fill="#07140d"/>
+  <circle cx="200" cy="210" r="118" fill="#14532d"/>
+  <path d="M120 168 L150 70 L175 168 L200 92 L225 168 L250 70 L280 168" fill="#22c55e"/>
+  <circle cx="200" cy="220" r="56" fill="#d1fae5"/>
+  <path d="M170 206 H186 M214 206 H230" stroke="#052e16" stroke-width="6"/>
+  <path d="M176 242 Q200 256 224 242" fill="none" stroke="#052e16" stroke-width="5"/>
+</svg>

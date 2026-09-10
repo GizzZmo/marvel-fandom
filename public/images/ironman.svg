@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Iron Man stylized portrait">
+  <rect width="400" height="400" fill="#1a1208"/>
+  <circle cx="200" cy="200" r="120" fill="#b45309"/>
+  <rect x="128" y="120" width="144" height="170" rx="40" fill="#F5C518"/>
+  <rect x="148" y="150" width="104" height="70" rx="16" fill="#111"/>
+  <rect x="160" y="164" width="34" height="18" rx="6" fill="#7dd3fc"/>
+  <rect x="206" y="164" width="34" height="18" rx="6" fill="#7dd3fc"/>
+  <circle cx="200" cy="250" r="16" fill="#7dd3fc"/>
+  <path d="M170 292 H230" stroke="#7f1d1d" stroke-width="10" stroke-linecap="round"/>
+</svg>
