@@ -3,21 +3,13 @@ title: "Infinity War"
 year: "1992"
 universe: "Earth-616"
 type: "Crossover"
-characters: ["Adam Warlock", "Thanos", "Avengers", "Doctor Strange"]
+characters: ["Adam Warlock", "Thanos", "Avengers", "Doctor Strange", "Spider-Man", "Thor"]
 cover: "/images/infinity-war.svg"
-summary: "Magus og et speilunivers av onde dobbeltgjengere truer virkeligheten mens Infinity-steinene kommer i spill."
+summary: "Magus skaper onde dobbeltgjengere av jordens helter mens Infinity-steinene igjen avgjør virkeligheten."
+creators: ["Jim Starlin", "Ron Lim"]
+issues: "Infinity War #1–6 pluss tie-ins"
 ---
 
 # Oversikt
 
-Infinity War er den andre delen av Jim Starlins store Infinity-triologi, etter Infinity Gauntlet og før Infinity Crusade. Magus — en mørk side av Adam Warlock — skaper onde kopier av jordens helter.
-
-## Hvorfor det betyr noe
-
-* Viderefører konsekvensene etter at Thanos bar hansken.
-* Utforsker dobbeltgjengere, sjelesteiner og kosmisk moral.
-* Binder sammen Avengers, Fantastic Four og det kosmiske hjørnet av universet.
-
-## Tips til wikien
-
-Koble karakterene via `characters`-listen i frontmatter. Da kan du senere bygge automatiske «opptrådte i»-seksjoner.
+Midtakten i Starlins Infinity-triologi. Magus — en korrupt fremtidig Warlock — slipper løs speilhelter. Les sammen med Infinity Gauntlet og Infinity Crusade som én setning om fanatisme: makt pluss absolutt visjon blir slakt, uansett fortegn.
